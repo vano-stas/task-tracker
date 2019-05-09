@@ -1,15 +1,14 @@
 import React from "react";
-import TodoContainer from "../todo-container/todo-container";
 import TodoCurrent from "../todo-current/todo-current";
 import TodoCompleted from "../todo-completed/todo-completed";
 
 import "./main-app.scss";
 
-const MainApp = () => {
+function MainApp ({todos, onToggleCompleted}) {
     return (
         <div className="main-app">
-            <TodoCurrent />
-            <TodoCompleted />
+            <TodoCurrent todos={todos} onToggleCompleted={onToggleCompleted} />
+            <TodoCompleted todos={todos} onToggleCompleted={onToggleCompleted} />
         </div>
     );
 };

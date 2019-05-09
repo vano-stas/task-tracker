@@ -1,7 +1,7 @@
 
 body, html {
   margin: 0;
-  // padding: 0;
+  padding: 0;
   background: #ccc;
   height: 100%;
 }
@@ -23,138 +23,6 @@ body, html {
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-
 .material-icons {
   user-select: none;
 }
-
-//------------------------------------------------------ navigation-----------------------------
-
-
-
-//------------------------------------------------------ header app-----------------------------
-
-
-
-//------------------------------------------------------ main app-----------------------------
-
-
-
-
-//-------------------------------------------------------------todo-item-------------------------------
-.item {
-  margin-top: 10px;
-  background: white;
-  height: 20%;
-  width: 90%;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.priority {
-  display: flex;
-  justify-content: flex-end;
-  height: 15%;
-  width: 100%;
-  padding-right: 2%;
-  span {
-    padding-left: 5px;
-    font-size: 10px;
-  }
-}
-
-.item-todo-text {
-  height: 85%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.text {
-  flex-grow: 1;
-  // padding: 10px;
-  padding-left: 10px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  h6 {
-      font-size: 14px;
-  }
-  
-  span {
-      height: 20px;
-      font-size: 14px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-  }
-}
-
-.icon-item {
-  margin-left: 10px;  
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: lightblue;
-  span {
-      height: 30px;
-      width: 30px;
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      text-align: center;
-      user-select: none;
-  }
-}
-
-
-
-
-
-
-
-// ul {
-//     top: 0;
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 0;
-//     width: 15%;
-//     background-color: #060053;
-//     height: 100%; /* Full height */
-//     position: fixed; /* Make it stick, even on scroll */
-//     overflow: auto; /* Enable scrolling if the sidenav has too much content */
-//   }
-
-//   li a {
-//     display: block;
-//     color: rgb(255, 255, 255);
-//     padding: 8px 16px;
-//     text-decoration: none;
-//   }
-  
-//   li a.active {
-//     background-color: rgb(0, 2, 107);
-//     color: white;
-//   }
-  
-//   li a:hover:not(.active) {
-//     background-color: #555;
-//     color: white;
-//   }
-
-  // .main {
-  //   width: 500px;
-  //   height: 200px;
-  //   margin-left: 20%;
-  // }
-
-  // .logo {
-  //   color: #ffffff;
-  // }

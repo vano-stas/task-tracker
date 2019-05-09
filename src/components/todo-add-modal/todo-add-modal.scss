@@ -1,0 +1,35 @@
+.todo-add-modal-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.todo-add-modal {
+    border-radius: 20px;
+    height: 40%;
+    width: 40%;
+    background: rgb(14, 35, 105);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    form {
+        margin-top: 30px;
+        color: white;
+        
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+.visible {
+    display: none;
+}
