@@ -1,9 +1,16 @@
+// .nav-app {
+//   grid-area: nav;
+//   height: 100vh;
+//   background: rgb(4, 0, 56);
+//   display: grid;
+//   grid-template-rows: 1fr 8fr;
+// }
+
 .nav-app {
-  grid-area: nav;
+  width: 15%;
   height: 100vh;
   background: rgb(4, 0, 56);
-  display: grid;
-  grid-template-rows: 1fr 8fr;
+  min-width: 150px;
 }
 
 .logo {
@@ -54,7 +61,7 @@
         }
 
         i {
-          padding-left: 20%;
+          padding-left: 10px;
           padding-right: 5px;
         }
       }

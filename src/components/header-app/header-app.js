@@ -1,25 +1,27 @@
 import React from "react";
-import TodoForm from "../todo-form/todo-form";
 
 import "./header-app.scss";
 
-function HeaderApp ({addTodo, onToggleModal}) {
+function HeaderApp ({ onToggleMenu, onToggleModal}) {
    
     return (
         <header className="head">
-            <div className="header-item"><i className="material-icons">menu</i></div>
+            <button className='btn btn-sm p-0 btn-menu'
+                onClick={onToggleMenu}>
+                <div className="header-item"><i className="material-icons md-24">menu</i></div>
+            </button>
+            
             <div className="header-item">
-                <TodoForm addTodo={addTodo} />
             </div>
             <div className="header-item"><i className="material-icons">filter_list</i></div>
             <div className="header-item"><i className="material-icons">sort_by_alpha</i></div>
             <div className="header-item">
                 <button type="button" className="add-button"
-                //  onClick={onToggleModal}
-                 >+Add todo
+                    onClick={onToggleModal}>
+                    +Add todo
                 </button>
             </div>
-            <div className="header-item"><i className="material-icons md-36">account_circle</i>
+            <div className="header-item account"><i className="material-icons md-36">account_circle</i>
             </div>
         </header>
     );

@@ -6,20 +6,34 @@ body, html {
   height: 100%;
 }
 
-.App {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1.5fr 3.75fr 3.75fr;
-  grid-template-rows: 1fr 4fr 4fr;
-  grid-template-areas: 
-    "nav header header"
-    "nav main main"
-    "nav main main";
+// .App {
+//   height: 100%;
+//   display: grid;
+//   grid-template-columns: 1.5fr 3.75fr 3.75fr;
+//   grid-template-rows: 1fr 4fr 4fr;
+//   grid-template-areas: 
+//     "nav header header"
+//     "nav main main"
+//     "nav main main";
+// }
+
+.app {
+  height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+.main-container {
+  flex-grow: 1;
+	height: 100vh;
+	// min-width: 80%;
 }
 
 .material-icons.md-12 { font-size: 12px; }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
+.material-icons.md-30 { font-size: 30px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 

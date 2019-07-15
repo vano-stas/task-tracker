@@ -11,3 +11,10 @@
   font-weight: bold;
   color: green;
 }
+
+.done {
+  .text {
+    text-decoration: line-through;
+    color: grey;
+  }
+}

@@ -3,7 +3,9 @@ import TodoItem from "../todo-item/todo-item";
 
 import "./todo-completed.scss";
 
-function TodoCompleted ({todos, onToggleCompleted}) {
+function TodoCompleted ({todos, onToggleCompleted, onToggleActionMenu, todoMenu, deleteItem }) {
+
+    const clazz = "done";
 
     return (
         <div className="todo-completed">
@@ -13,7 +15,14 @@ function TodoCompleted ({todos, onToggleCompleted}) {
                 { todos.map((todo) =>  {
                     if (todo.isCompleted === true) {
                         return (
-                            <TodoItem  key={todo.id} index={todo.id} todo={todo} onToggleCompleted={onToggleCompleted} />
+                            <TodoItem clazz={clazz}
+                                key={todo.id}
+                                todo={todo}
+                                deleteItem={() => deleteItem(todo.id)}
+                                onToggleCompleted={() => onToggleCompleted(todo.id)}
+                                onToggleActionMenu={onToggleActionMenu}
+                                todoMenu={todoMenu}
+                                />
                         )
                     }
                 })
